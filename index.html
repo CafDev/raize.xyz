@@ -61,7 +61,17 @@ hr {
   <div class="middle">
     <h1>Coming soon!</h1>
     <hr>
-    <p>Everyone deserves their dream name...</p>
+    
+    <p id="quote"></p>
+
+    <script>
+    var quotes = ['This is a Quote...', 'Who writes these?', 'Waize.xyz, UwU', 'Caf#0001 on discord is very cool... jk', 'A serious website for serious people...']
+    function randomQuotes() {
+        var idx = Math.floor(Math.random() * quotes.length)
+        document.getElementById('quote').innerHTML = quotes[idx]
+    }
+    </script>
+    
     <a href="https://raize.xyz/Changelogs/" style="color:white">Changelogs</a>
    
   </div>
