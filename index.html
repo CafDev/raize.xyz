@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+  <body onload="randomQuotes()">
+
+    <script>
+    var quotes = ['hi', 'bye', 'lol', 'hello', 'world']
+    function randomQuotes() {
+        var idx = Math.floor(Math.random() * quotes.length)
+        document.getElementById('quote').innerHTML = quotes[idx]
+    }
+    </script>
+
   <title>Raize.xyz</title>
   <link rel="shortcut icon" type="image/jpg" href="/css/raize.png"/>
   <meta property="og:type" content="website">
@@ -61,8 +71,9 @@ hr {
   <div class="middle">
     <h1>Coming soon!</h1>
     <hr>
-    
-<p>Im sure it will come soon, it will, yes it will. Indeed it will</p>
+ 
+    <p id="quote"></p>
+
     
     <a href="https://raize.xyz/Changelogs/" style="color:white">Changelogs</a>
     <a href="https://raize.xyz/discord/" style="color:white">Join our discord!</a>
