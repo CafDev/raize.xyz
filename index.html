@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <noscript>You need to enable JS to see this website. Seriously what browser are you on?</noscript>
+  <noscript>You need to enable JS to see this website.</noscript>
     <link rel="shortcut icon" type="image/jpg" href="/css/td.png"/>
   <body onload="randomQuotes()">
 
-    <script>
-    var quotes = ['Cats are cute', 'Powered by Cats', 'Hello Stranger...', 'here take some <a href="https://reddit.com/r/eyebleach" style="color: white;">']
-    function randomQuotes() {
-        var idx = Math.floor(Math.random() * quotes.length)
-        document.getElementById('quote').innerHTML = quotes[idx]
-    }
-    </script>
 
-        <script>
-          var title = ['timdres.com | Home', 'this is randomly generated', 'hello :pog:']
-          function randomQuotes() {
-              var idx = Math.floor(Math.random() * quotes.length)
-              document.getElementById('quote').innerHTML = quotes[idx]
-          }
-          </script>
 
-  <title id="title"></title>
+  <title>"Home"</title>
   <link rel="shortcut icon" type="image/jpg" href="/css/td.png"/>
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://raize.xyz/">
@@ -38,7 +24,7 @@ background-color: #000000;
   background-size: cover;
   position: relative;
   color: white;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
 }
 
@@ -46,6 +32,7 @@ background-color: #000000;
   position: absolute;
   top: 0;
   left: 16px;
+  transition: 1s;
 }
 
 
@@ -96,34 +83,45 @@ body, html {
   margin: 0;
 }
 
-.typewriter:hover {
-  color:yellow
-}
-
-.button1 {
-  width: 120px;
-  height: 30px;
-  background: rgb(255, 255, 255);
-  border-radius: 12px;
-  transition: 2s;
+.topleft:hover {
+  color: aqua;
 }
 
 
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000c7, 0 0 40px #e60000c7, 0 0 50px #e60000c7, 0 0 60px #e60000c7, 0 0 70px #e60000c7;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+  }
+}
+a {text-decoration: none; }
 
 </style>
 <body>
 
 <div class="bgimg">
   <div class="topleft">
-   
-    <a href="https://timdres.com/projects" style="color: white;">projects</a>
+
+    <a href="https://timdres.com/projects" style="color: white;">projects  |</a>
+    <a href="https://timdres.com/projects" style="color: white;">media</a>
 </a>
   </div>
   <div class="middle">
-      <p>timdres.com</p>
-    <hr>
+      <h1 class="glow
+">timdres.com</h1>
+  
     <div class="typewriter">
-    <p id="quote"></p>
+   <p>Welcome to timdres.com - work in progress</p>
     </div>
         
          </div>
